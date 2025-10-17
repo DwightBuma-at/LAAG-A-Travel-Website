@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAAG - A Travel Website</title>
+    <meta name="description" content="Discover the beauty of the Philippines with LAAG - your gateway to amazing destinations like Palawan, Boracay, Cebu, Bohol, Siargao, and Manila.">
+    
+    <!-- Redirect to the built Vue.js app -->
+    <script>
+        // Check if we're on GitHub Pages
+        if (window.location.hostname === 'dwightbuma-at.github.io') {
+            // Redirect to the built app
+            window.location.href = '/LAAG-A-Travel-Website/';
+        } else {
+            // For local development, redirect to frontend
+            window.location.href = '/frontend/';
+        }
+    </script>
+    
+    <!-- Fallback content -->
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%);
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏝️ LAAG</h1>
+        <p>Discover the beauty of the Philippines</p>
+        <div class="spinner"></div>
+        <p>Loading your travel experience...</p>
+        <a href="/frontend/" class="btn">Enter Website</a>
+    </div>
+</body>
+</html>
