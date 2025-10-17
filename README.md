@@ -1,136 +1,148 @@
-# LAAG - Travel Website Landing Page 🏝️
+# 🏝️ LAAG - A Travel Website
 
-A beautiful, modern travel website landing page showcasing tourist destinations in the Philippines, built with Vue.js.
+A beautiful, modern travel website showcasing the Philippines' most stunning destinations. Built with Vue.js 3, Tailwind CSS, and Vite for a premium user experience.
 
-## Features ✨
+## 🌟 Features
 
-### 🎨 Design Elements
-- **Custom LAAG Logo** - Stylized with gradient effects and the Righteous font
-- **Background Slideshow** - Rotating backgrounds featuring 6 Philippine destinations:
-  - Bohol
-  - Cebu
-  - Siargao
-  - Palawan
-  - Davao
-  - Boracay
+- **Modern Vue.js 3 Frontend** - Built with Composition API and Vue Router
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- **Day/Night Mode** - Toggle between light and dark themes
+- **Background Slideshow** - Auto-changing Philippine destination images
+- **Interactive Navigation** - Smooth scrolling and active state management
+- **Login/Signup Modal** - Authentication system ready for backend integration
+- **Destination Cards** - Click to visit official tourism websites
+- **Professional UI** - Clean, modern design with Tailwind CSS
+- **Local Images** - All images stored locally for fast loading
 
-### 🧭 Navigation
-- **Responsive Navbar** with links to:
-  - Home
-  - Destination
-  - Offers
-  - About Us
-- Mobile-friendly hamburger menu for smaller screens
+## 🏖️ Destinations Featured
 
-### 🌓 Theme Switching
-- **Day/Night Mode Toggle** - Switch between light and dark themes
-- Theme preference is saved in browser's local storage
+- **Palawan** - Underground River and El Nido
+- **Boracay** - White sand beaches and crystal clear waters
+- **Cebu** - Historical sites and beautiful islands
+- **Bohol** - Chocolate Hills and tarsier sanctuary
+- **Siargao** - Surfing capital and island hopping
+- **Manila** - Capital city with rich history and culture
 
-### 🔐 Authentication UI
-- **Login Modal** with:
-  - Email and password fields
-  - Remember me checkbox
-  - Forgot password link
-- **Sign Up Modal** with:
-  - Full name, email, password, and confirm password fields
-  - Terms and conditions checkbox
-- Easy switching between login and signup forms
+## 🚀 Tech Stack
 
-### 📱 Responsive Design
-- Fully responsive layout that works on desktop, tablet, and mobile devices
-- Adaptive navigation menu for mobile screens
-- Optimized typography and spacing for different screen sizes
+- **Frontend**: Vue.js 3, Vue Router, Pinia
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Icons**: Custom SVG icons
+- **Fonts**: Inter (Google Fonts)
 
-## Technology Stack 🛠️
+## 📦 Installation
 
-- **Vue.js 3** - Progressive JavaScript framework
-- **Vanilla CSS** - Custom styling with modern CSS features
-- **Google Fonts** - Poppins & Righteous fonts
-- **Unsplash** - High-quality images for tourist destinations
-
-## Getting Started 🚀
-
-1. Simply open `index.html` in your web browser
-2. No build process or installation required!
-3. All dependencies are loaded via CDN
-
-## File Structure 📁
-
-```
-Travel Website/
-│
-├── index.html          # Main HTML file with Vue template
-├── app.js             # Vue.js application logic
-├── styles.css         # Custom CSS styling
-└── README.md          # Project documentation
+1. Clone the repository:
+```bash
+git clone https://github.com/DwightBuma-at/LAAG-A-Travel-Website.git
+cd LAAG-A-Travel-Website
 ```
 
-## Features Breakdown 🔍
-
-### Background Slideshow
-- Automatically transitions every 5 seconds
-- Manual navigation via dot indicators
-- Smooth fade transitions between slides
-- Current location badge displays destination name
-
-### Modal System
-- Smooth fade and slide animations
-- Click outside to close
-- Form validation
-- Switch between login/signup without closing modal
-
-### Dark Mode
-- Smooth transitions between themes
-- Adjusted overlays and transparency for better readability
-- Consistent styling across all components
-
-## Browser Support 🌐
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Demo Features 💡
-
-The forms are currently set up for demonstration purposes:
-- Login and signup will show alert messages
-- No actual authentication is implemented
-- Form data is logged to console
-
-## Customization 🎨
-
-### Changing Background Images
-Edit the `touristSpots` array in `app.js`:
-```javascript
-touristSpots: [
-    {
-        name: 'Your Location',
-        image: 'your-image-url'
-    }
-]
+2. Navigate to the frontend directory:
+```bash
+cd frontend
 ```
 
-### Modifying Colors
-Edit CSS variables in `styles.css`:
-```css
-:root {
-    --primary-color: #FF6B6B;
-    --secondary-color: #4ECDC4;
-    --accent-color: #FFE66D;
-}
+3. Install dependencies:
+```bash
+npm install
 ```
 
-## Credits 📸
+4. Start the development server:
+```bash
+npm run dev
+```
 
-- Images from [Unsplash](https://unsplash.com)
-- Fonts from [Google Fonts](https://fonts.google.com)
+5. Open your browser and visit `http://localhost:3000`
 
-## License
+## 🎨 Design Features
 
-This project is open source and available for educational purposes.
+- **Premium SaaS Look** - Clean, modern, professional design
+- **Soft Color Palette** - Blue (#4A90E2), Teal (#50E3C2), Warm Orange (#F5A623)
+- **Glassmorphism Effects** - Modern glass-like UI elements
+- **Smooth Animations** - Hover effects and transitions
+- **Grid Layouts** - Responsive grid-based sections
+- **Typography** - Inter font for modern readability
+
+## 📱 Pages
+
+- **Home** - Hero section with slideshow, destinations, and offers
+- **About Us** - Company information and team details
+- **Booking** - Travel booking form (opens login modal)
+- **Destinations** - Interactive destination cards
+- **Offers** - Special travel packages and deals
+
+## 🔧 Development
+
+### Project Structure
+```
+frontend/
+├── public/
+│   └── images/          # Local destination images
+├── src/
+│   ├── components/      # Reusable Vue components
+│   ├── pages/          # Page components
+│   ├── router/         # Vue Router configuration
+│   ├── store/          # Pinia state management
+│   └── assets/         # CSS and other assets
+├── tailwind.config.js  # Tailwind CSS configuration
+└── vite.config.js      # Vite configuration
+```
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+
+## 🌐 Deployment
+
+This project is ready for deployment on:
+- **GitHub Pages** (recommended)
+- **Netlify**
+- **Vercel**
+- **Firebase Hosting**
+
+### GitHub Pages Deployment
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. The built files will be in the `dist/` directory
+3. Deploy the `dist/` folder to GitHub Pages
+
+## 🎯 Future Enhancements
+
+- Backend API integration
+- User authentication system
+- Real booking functionality
+- Payment integration
+- Admin dashboard
+- Multi-language support
+- SEO optimization
+
+## 👨‍💻 Developer
+
+**Developed by Dwight Anthony Buma-at**
+
+- 🌐 [GitHub](https://github.com/DwightBuma-at)
+- 💼 [LinkedIn](https://linkedin.com/in/dwight-anthony-buma-at)
+- 📧 [Email](mailto:dwight.bumaat@gmail.com)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Philippine Tourism for destination information
+- Vue.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- All the beautiful images showcasing the Philippines
 
 ---
 
-**Made with ❤️ for Philippine Tourism**
-
+**Made with ❤️ for showcasing the beauty of the Philippines** 🇵🇭
